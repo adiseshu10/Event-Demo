@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Registration</h1>
+        <form id="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="event">Event:</label>
+            <select id="event" name="event">
+                <option value="">Select an event</option>
+                <option value="Trekking">Trekking</option>
+                <option value="Rockclimbing">Rockclimbing</option>
+                <option value="Hiking">Hiking</option>
+            </select><br><br>
+            <input type="submit" value="Register">
+        </form>
+        <div id="events">
+            <h3>Trekking</h3>
+            <ul id="Trekking"></ul>
+            <h3>Rockclimbing</h3>
+            <ul id="Rockclimbing"></ul>
+            <h3>Hiking</h3>
+            <ul id="Hiking"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
